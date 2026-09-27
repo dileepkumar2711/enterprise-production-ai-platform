@@ -1,0 +1,16 @@
+.venv
+.git
+.github
+.pytest_cache
+__pycache__
+*.pyc
+tests
+terraform
+kubernetes
+helm
+argocd
+observability
+docs
+mcp
+context-engineering
+security
