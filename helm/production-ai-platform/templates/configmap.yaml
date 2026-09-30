@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "production-ai-platform.fullname" . }}-config
+  labels:
+    {{- include "production-ai-platform.labels" . | nindent 4 }}
+data:
+  APP_ENV: {{ .Values.config.APP_ENV | quote }}
+  MODEL_VERSION: {{ .Values.config.MODEL_VERSION | quote }}
+  LOG_LEVEL: {{ .Values.config.LOG_LEVEL | quote }}
