@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: enterprise-production-ai-platform
+  labels:
+    app: enterprise-production-ai-platform
+spec:
+  type: ClusterIP
+  selector:
+    app: enterprise-production-ai-platform
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: http

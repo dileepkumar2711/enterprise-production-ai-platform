@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: production-ai-config
+  labels:
+    app: enterprise-production-ai-platform
+data:
+  APP_ENV: "production"
+  MODEL_VERSION: "demo-v1"
+  LOG_LEVEL: "INFO"
